@@ -47,105 +47,123 @@ import {
     </section>
     <div class="flex flex-col gap-20 items-end">
       <section class="grid grid-cols-3 gap-x-32 gap-y-30 items-center">
-        <div class="w-73 cursor-pointer">
-          <div class="max-w-[292px] max-h-[292px] overflow-hidden">
-            <img
-              class="transition-all duration-150 hover:scale-110"
-              src="../assets/Flower1.png"
-              alt=""
-            />
+        <RouterLink to="Card">
+          <div class="w-73 cursor-pointer">
+            <div class="max-w-[292px] max-h-[292px] overflow-hidden">
+              <img
+                class="transition-all duration-150 hover:scale-110"
+                src="@/assets/Flower1.png"
+                alt=""
+              />
+            </div>
+            <p>Barberton Daisy</p>
+            <p class="text-green-600 font-bold">$119.00</p>
           </div>
-          <p>Barberton Daisy</p>
-          <p class="text-green-600 font-bold">$119.00</p>
-        </div>
-        <div class="w-73 cursor-pointer">
-          <div class="max-w-[292px] max-h-[292px] overflow-hidden">
-            <img
-              class="transition-all duration-150 hover:scale-110"
-              src="../assets/Flower2.png"
-              alt=""
-            />
+        </RouterLink>
+        <RouterLink to="Card1">
+          <div class="w-73 cursor-pointer">
+            <div class="max-w-[292px] max-h-[292px] overflow-hidden">
+              <img
+                class="transition-all duration-150 hover:scale-110"
+                src="@/assets/Flower2.png"
+                alt=""
+              />
+            </div>
+            <p>Angel Wing Begonia</p>
+            <p class="text-green-600 font-bold">$169.00</p>
           </div>
-          <p>Angel Wing Begonia</p>
-          <p class="text-green-600 font-bold">$169.00</p>
-        </div>
-        <div class="w-73 cursor-pointer">
-          <div class="max-w-[292px] max-h-[292px] overflow-hidden">
-            <img
-              class="transition-all duration-150 hover:scale-110"
-              src="../assets/Flower3.png"
-              alt=""
-            />
+        </RouterLink>
+        <RouterLink to="Card2">
+          <div class="w-73 cursor-pointer">
+            <div class="max-w-[292px] max-h-[292px] overflow-hidden">
+              <img
+                class="transition-all duration-150 hover:scale-110"
+                src="@/assets/Flower3.png"
+                alt=""
+              />
+            </div>
+            <p>African Violet</p>
+            <p class="text-green-600 font-bold">$199.00</p>
           </div>
-          <p>African Violet</p>
-          <p class="text-green-600 font-bold">$199.00</p>
-        </div>
-        <div class="w-73 cursor-pointer">
-          <div class="max-w-[292px] max-h-[292px] overflow-hidden">
-            <img
-              class="max-h-[292px] transition-all duration-150 hover:scale-110"
-              src="../assets/Flower4.png"
-              alt=""
-            />
+        </RouterLink>
+        <RouterLink to="Card3">
+          <div class="w-73 cursor-pointer">
+            <div class="max-w-[292px] max-h-[292px] overflow-hidden">
+              <img
+                class="max-h-[292px] transition-all duration-150 hover:scale-110"
+                src="@/assets/Flower4.png"
+                alt=""
+              />
+            </div>
+            <p>Beach Spider Lily</p>
+            <p class="text-green-600 font-bold">$129.00</p>
           </div>
-          <p>Beach Spider Lily</p>
-          <p class="text-green-600 font-bold">$129.00</p>
-        </div>
-        <div class="w-73 cursor-pointer">
-          <div class="max-w-[292px] max-h-[292px] overflow-hidden">
-            <img
-              class="transition-all duration-150 hover:scale-110"
-              src="../assets/Flower5.png"
-              alt=""
-            />
+        </RouterLink>
+        <RouterLink to="Card4">
+          <div class="w-73 cursor-pointer">
+            <div class="max-w-[292px] max-h-[292px] overflow-hidden">
+              <img
+                class="transition-all duration-150 hover:scale-110"
+                src="@/assets/Flower5.png"
+                alt=""
+              />
+            </div>
+            <p>Blushing Bromeliad</p>
+            <p class="text-green-600 font-bold">$139.00</p>
           </div>
-          <p>Blushing Bromeliad</p>
-          <p class="text-green-600 font-bold">$139.00</p>
-        </div>
-        <div class="w-73 cursor-pointer">
-          <div class="max-w-[292px] max-h-[292px] overflow-hidden">
-            <img
-              class="transition-all duration-150 hover:scale-110"
-              src="../assets/Flower6.png"
-              alt=""
-            />
+        </RouterLink>
+        <RouterLink to="Card5">
+          <div class="w-73 cursor-pointer">
+            <div class="max-w-[292px] max-h-[292px] overflow-hidden">
+              <img
+                class="transition-all duration-150 hover:scale-110"
+                src="@/assets/Flower6.png"
+                alt=""
+              />
+            </div>
+            <p>Aluminum Plant</p>
+            <p class="text-green-600 font-bold">$179.00</p>
           </div>
-          <p>Aluminum Plant</p>
-          <p class="text-green-600 font-bold">$179.00</p>
-        </div>
-        <div class="w-73 cursor-pointer">
-          <div class="max-w-[292px] max-h-[292px] overflow-hidden">
-            <img
-              class="transition-all duration-150 hover:scale-110"
-              src="../assets/Flower7.png"
-              alt=""
-            />
+        </RouterLink>
+        <RouterLink to="Card6">
+          <div class="w-73 cursor-pointer">
+            <div class="max-w-[292px] max-h-[292px] overflow-hidden">
+              <img
+                class="transition-all duration-150 hover:scale-110"
+                src="@/assets/Flower7.png"
+                alt=""
+              />
+            </div>
+            <p>Bird's Nest Fern</p>
+            <p class="text-green-600 font-bold">$99.00</p>
           </div>
-          <p>Bird's Nest Fern</p>
-          <p class="text-green-600 font-bold">$99.00</p>
-        </div>
-        <div class="w-73 cursor-pointer">
-          <div class="max-w-[292px] max-h-[292px] overflow-hidden">
-            <img
-              class="transition-all duration-150 hover:scale-110"
-              src="../assets/Flower8.png"
-              alt=""
-            />
+        </RouterLink>
+        <RouterLink to="Card7">
+          <div class="w-73 cursor-pointer">
+            <div class="max-w-[292px] max-h-[292px] overflow-hidden">
+              <img
+                class="transition-all duration-150 hover:scale-110"
+                src="@/assets/Flower8.png"
+                alt=""
+              />
+            </div>
+            <p>Broadleaf Lady Palm</p>
+            <p class="text-green-600 font-bold">$59.00</p>
           </div>
-          <p>Broadleaf Lady Palm</p>
-          <p class="text-green-600 font-bold">$59.00</p>
-        </div>
-        <div class="w-73 cursor-pointer">
-          <div class="max-w-[292px] max-h-[292px] overflow-hidden">
-            <img
-              class="transition-all duration-150 hover:scale-110"
-              src="../assets/Flower9.png"
-              alt=""
-            />
+        </RouterLink>
+        <RouterLink to="Card8">
+          <div class="w-73 cursor-pointer">
+            <div class="max-w-[292px] max-h-[292px] overflow-hidden">
+              <img
+                class="transition-all duration-150 hover:scale-110"
+                src="@/assets/Flower9.png"
+                alt=""
+              />
+            </div>
+            <p>Chinese Evergreen</p>
+            <p class="text-green-600 font-bold">$39.00</p>
           </div>
-          <p>Chinese Evergreen</p>
-          <p class="text-green-600 font-bold">$39.00</p>
-        </div>
+        </RouterLink>
       </section>
       <div>
         <Pagination

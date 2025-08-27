@@ -2,10 +2,12 @@
 import { Button } from "@/components/ui/button";
 </script>
 <template>
-  <section class="flex items-center justify-between px-47  py-6">
+  <section class="flex items-center justify-between px-47 py-6">
     <div><img class="max-w-60" src="../assets/logo.png" alt="" /></div>
     <div class="flex gap-8 text-lg font-medium">
-      <div class="cursor-pointer">Home</div>
+      <RouterLink to="Dashboard">
+        <div class="cursor-pointer">Home</div>
+      </RouterLink>
       <div class="cursor-pointer">Shop</div>
       <div class="cursor-pointer">Plant Care</div>
       <div class="cursor-pointer">Blogs</div>
