@@ -54,14 +54,18 @@ function decrease() {
 <template>
   <section class="container mx-auto p-6 grid grid-cols-1 gap-10">
     <section class="my-2">
-      <Breadcrumb>
+       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/"> Home </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Shop</BreadcrumbPage>
+            <BreadcrumbLink href="/shop">Shop</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Card5</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>

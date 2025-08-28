@@ -1,4 +1,5 @@
 <script setup>
+import End from "./End.vue";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -19,8 +20,11 @@ import {
 } from "@/components/ui/pagination";
 </script>
 <template>
-  <div class="container">
-    <section class="flex justify-between">
+  <div
+    class="container mx-auto flex flex-col items-center"
+    v-if="$route.path === '/shop' || $route.path === '/Dashboard'"
+  >
+    <section class="flex items-center justify-between w-full">
       <div class="flex gap-8">
         <p>All Plants</p>
         <p>New Arrivals</p>
@@ -47,7 +51,7 @@ import {
     </section>
     <div class="flex flex-col gap-20 items-end">
       <section class="grid grid-cols-3 gap-x-32 gap-y-30 items-center">
-        <RouterLink to="Card">
+        <RouterLink to="shop/Card">
           <div class="w-73 cursor-pointer">
             <div class="max-w-[292px] max-h-[292px] overflow-hidden">
               <img
@@ -60,7 +64,7 @@ import {
             <p class="text-green-600 font-bold">$119.00</p>
           </div>
         </RouterLink>
-        <RouterLink to="Card1">
+        <RouterLink to="shop/Card1">
           <div class="w-73 cursor-pointer">
             <div class="max-w-[292px] max-h-[292px] overflow-hidden">
               <img
@@ -73,7 +77,7 @@ import {
             <p class="text-green-600 font-bold">$169.00</p>
           </div>
         </RouterLink>
-        <RouterLink to="Card2">
+        <RouterLink to="shop/Card2">
           <div class="w-73 cursor-pointer">
             <div class="max-w-[292px] max-h-[292px] overflow-hidden">
               <img
@@ -86,7 +90,7 @@ import {
             <p class="text-green-600 font-bold">$199.00</p>
           </div>
         </RouterLink>
-        <RouterLink to="Card3">
+        <RouterLink to="shop/Card3">
           <div class="w-73 cursor-pointer">
             <div class="max-w-[292px] max-h-[292px] overflow-hidden">
               <img
@@ -99,7 +103,7 @@ import {
             <p class="text-green-600 font-bold">$129.00</p>
           </div>
         </RouterLink>
-        <RouterLink to="Card4">
+        <RouterLink to="shop/Card4">
           <div class="w-73 cursor-pointer">
             <div class="max-w-[292px] max-h-[292px] overflow-hidden">
               <img
@@ -112,7 +116,7 @@ import {
             <p class="text-green-600 font-bold">$139.00</p>
           </div>
         </RouterLink>
-        <RouterLink to="Card5">
+        <RouterLink to="shop/Card5">
           <div class="w-73 cursor-pointer">
             <div class="max-w-[292px] max-h-[292px] overflow-hidden">
               <img
@@ -125,7 +129,7 @@ import {
             <p class="text-green-600 font-bold">$179.00</p>
           </div>
         </RouterLink>
-        <RouterLink to="Card6">
+        <RouterLink to="shop/Card6">
           <div class="w-73 cursor-pointer">
             <div class="max-w-[292px] max-h-[292px] overflow-hidden">
               <img
@@ -138,7 +142,7 @@ import {
             <p class="text-green-600 font-bold">$99.00</p>
           </div>
         </RouterLink>
-        <RouterLink to="Card7">
+        <RouterLink to="shop/Card7">
           <div class="w-73 cursor-pointer">
             <div class="max-w-[292px] max-h-[292px] overflow-hidden">
               <img
@@ -151,7 +155,7 @@ import {
             <p class="text-green-600 font-bold">$59.00</p>
           </div>
         </RouterLink>
-        <RouterLink to="Card8">
+        <RouterLink to="shop/Card8">
           <div class="w-73 cursor-pointer">
             <div class="max-w-[292px] max-h-[292px] overflow-hidden">
               <img
@@ -193,4 +197,8 @@ import {
       </div>
     </div>
   </div>
+  <router-view v-else />
+  <section v-if="$route.path === '/shop'" class="container mx-auto">
+    <End></End>
+  </section>
 </template>

@@ -1,14 +1,18 @@
 <script setup>
 import { Button } from "@/components/ui/button";
+import path from "path";
+import { ref } from "vue";
 </script>
 <template>
   <section class="flex items-center justify-between px-47 py-6">
     <div><img class="max-w-60" src="../assets/logo.png" alt="" /></div>
     <div class="flex gap-8 text-lg font-medium">
-      <RouterLink to="Dashboard">
+      <RouterLink to="/Dashboard">
         <div class="cursor-pointer">Home</div>
       </RouterLink>
-      <div class="cursor-pointer">Shop</div>
+      <RouterLink to="/shop">
+        <div class="cursor-pointer">Shop</div>
+      </RouterLink>
       <div class="cursor-pointer">Plant Care</div>
       <div class="cursor-pointer">Blogs</div>
     </div>

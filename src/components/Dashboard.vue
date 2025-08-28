@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import Card from "@/components/Cards.vue";
+import Cards from "@/components/Cards.vue";
 import End from "@/components/End.vue";
 
 const modelValue = ref([0, 500]);
@@ -127,7 +127,7 @@ const modelValue = ref([0, 500]);
         </div>
       </section>
       <section class="w-full">
-        <Card></Card>
+        <Cards />
       </section>
     </div>
     <section class="flex justify-between mt-30">
