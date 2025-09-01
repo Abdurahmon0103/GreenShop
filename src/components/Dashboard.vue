@@ -1,4 +1,5 @@
 <script setup>
+import { Switch } from "@/components/ui/switch";
 import { ref } from "vue";
 import { cn } from "@/lib/utils";
 import { Slider } from "@/components/ui/slider";
@@ -6,11 +7,21 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Cards from "@/components/Cards.vue";
 import End from "@/components/End.vue";
+// import { Icon } from "lucide-vue";
+const isDark = ref(false);
 
+const toggleTheme = () => {
+  isDark.value = !isDark.value;
+  if (isDark.value) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+};
 const modelValue = ref([0, 500]);
 </script>
 <template>
-  <section class="container mx-auto">
+  <section :class="{ dark: isDark }" class="container mx-auto">
     <section class="flex justify-between items-center">
       <div class="flex flex-col gap-6">
         <div><p class="text-xl">Welcome to green shop</p></div>
@@ -27,7 +38,13 @@ const modelValue = ref([0, 500]);
             Order your favorite plants!
           </p>
         </div>
-        <div><Button class="w-40 h-10 mt-10">Shop Now</Button></div>
+        <div>
+          <Button class="w-40 h-10 mt-10">Shop Now</Button>
+          <button :model-value="isDark" @click="toggleTheme">
+            <img v-if="isDark" src="../assets/moon.svg" alt="" />
+            <img v-else src="../assets/sun.svg" alt="" />
+          </button>
+        </div>
       </div>
       <div>
         <img src="../assets/Flower0.png" alt="" />
